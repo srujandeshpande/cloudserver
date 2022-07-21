@@ -426,9 +426,9 @@ arraybuffer.slice@~0.0.7:
   optionalDependencies:
     ioctl "^2.0.2"
 
-"arsenal@git+https://github.com/scality/Arsenal#bugfix/ARSN-250/fix_getByteRangeFromSpec_edgecase":
+"arsenal@git+https://github.com/scality/Arsenal#7.10.29":
   version "7.10.29"
-  resolved "git+https://github.com/scality/Arsenal#afcd3d53ce68010a664c7fcb823ba382e0a87dba"
+  resolved "git+https://github.com/scality/Arsenal#3882ecf1a08608b77ae004189f0fb938b50caf59"
   dependencies:
     "@types/async" "^3.2.12"
     "@types/utf8" "^3.0.1"

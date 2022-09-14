@@ -20,7 +20,7 @@
   "homepage": "https://github.com/scality/S3#readme",
   "dependencies": {
     "@hapi/joi": "^17.1.0",
-    "arsenal": "git+https://github.com/scality/Arsenal.git#feature/ARSN-235-update-object-before-deleting-it",
+    "arsenal": "git+https://github.com/scality/Arsenal.git#w/8.1/feature/ARSN-235-update-object-before-deleting-it",
     "async": "~2.5.0",
     "aws-sdk": "2.905.0",
     "azure-storage": "^2.1.0",

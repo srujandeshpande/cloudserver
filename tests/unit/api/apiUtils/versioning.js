@@ -260,7 +260,7 @@ describe('versioning helpers', () => {
             })));
     });
 
-    describe.only('preprocessingVersioningDelete', () => {
+    describe('preprocessingVersioningDelete', () => {
         [
             {
                 description: 'no reqVersionId: no delete action',
@@ -302,6 +302,7 @@ describe('versioning helpers', () => {
                 reqVersionId: 'null',
                 expectedRes: {
                     deleteData: true,
+                    isNull: true,
                     versionId: 'vnull',
                 },
             },
@@ -315,6 +316,7 @@ describe('versioning helpers', () => {
                 reqVersionId: 'null',
                 expectedRes: {
                     deleteData: true,
+                    isNull: true,
                     versionId: 'vnull',
                     replayId: 'fooUploadId',
                 },
@@ -408,14 +410,6 @@ describe('versioning helpers', () => {
                     versionId: 'vnull',
                     replayId: 'nullFooUploadId',
                 },
-            },
-            {
-                description: 'delete null version that does not exist',
-                objMD: {
-                    versionId: 'v1',
-                },
-                reqVersionId: 'null',
-                expectedError: 'NoSuchKey',
             },
             {
                 description: 'delete null version that does not exist',
